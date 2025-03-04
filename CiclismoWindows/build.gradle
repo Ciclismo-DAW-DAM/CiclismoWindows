@@ -2,8 +2,8 @@ plugins {
   id 'java'
   id 'application'
   id 'org.javamodularity.moduleplugin' version '1.8.12'
-  id 'org.openjfx.javafxplugin' version '0.0.13'
-  id 'org.beryx.jlink' version '2.25.0'
+  id 'org.openjfx.javafxplugin' version '0.1.0'
+  id 'org.beryx.jlink' version '2.26.0'
 }
 
 group 'Clases'
@@ -25,23 +25,24 @@ tasks.withType(JavaCompile) {
 }
 
 application {
-  mainModule = 'clases.ciclismowindows'
+  mainModule = 'CiclismoWindows.main'
   mainClass = 'clases.ciclismowindows.HelloApplication'
 }
 
 javafx {
   version = '21'
-  modules = ['javafx.controls', 'javafx.fxml']
+  modules = ['javafx.controls', 'javafx.fxml', 'javafx.graphics']
 }
 
 dependencies {
-
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+  implementation 'org.mariadb.jdbc:mariadb-java-client:3.1.2'
 }
 
 test {
-useJUnitPlatform()}
+  useJUnitPlatform()
+}
 
 jlink {
   imageZip = project.file("${buildDir}/distributions/app-${javafx.platform.classifier}.zip")

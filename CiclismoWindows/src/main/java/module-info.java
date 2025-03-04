@@ -1,4 +1,4 @@
-module clases.ciclismowindows {
+module CiclismoWindows.main {
     requires javafx.controls;
     requires javafx.fxml;
 
