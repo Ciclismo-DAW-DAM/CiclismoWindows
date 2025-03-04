@@ -18,27 +18,27 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #001f3d;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <top>
-      <Pane prefHeight="112.0" prefWidth="1280.0" style="-fx-background-color: #00ffaa;" BorderPane.alignment="CENTER">
+      <Pane prefHeight="72.0" prefWidth="1280.0" style="-fx-background-color: #00ffaa;" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="55.0" layoutY="35.0" text="Ciclismo" textFill="#001f3d">
+            <Label layoutX="56.0" layoutY="16.0" text="Ciclismo" textFill="#001f3d">
                <font>
                   <Font name="Arial" size="35.0" />
                </font>
             </Label>
-            <Label layoutX="1153.0" layoutY="42.0" text="Perfil" textFill="#001f3d">
+            <Label layoutX="1153.0" layoutY="21.0" text="Perfil" textFill="#001f3d">
                <font>
                   <Font name="Arial" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="231.0" layoutY="42.0" text="Participaciones" textFill="#001f3d">
+            <Label layoutX="231.0" layoutY="21.0" text="Participaciones" textFill="#001f3d">
                <font>
                   <Font name="Arial" size="25.0" />
                </font>
             </Label>
-            <Pane layoutX="204.0" layoutY="32.0" prefHeight="50.0" prefWidth="5.0" style="-fx-background-color: #001f3d; -fx-background-radius: 15;" />
-            <VBox layoutX="505.0" layoutY="30.0" prefHeight="408.0" prefWidth="504.0">
+            <Pane layoutX="203.0" layoutY="11.0" prefHeight="50.0" prefWidth="5.0" style="-fx-background-color: #001f3d; -fx-background-radius: 15;" />
+            <VBox layoutX="505.0" layoutY="8.0" prefHeight="408.0" prefWidth="504.0">
                <children>
-                  <Pane prefHeight="57.0" prefWidth="504.0">
+                  <Pane prefHeight="55.0" prefWidth="504.0">
                      <children>
                         <TextField fx:id="txt_Buscardor" layoutY="12.0" prefHeight="40.0" prefWidth="507.0" promptText="Buscador" style="-fx-border-radius: 50px; -fx-background-radius: 50px;">
                            <opaqueInsets>
@@ -62,7 +62,7 @@
       <Pane prefHeight="608.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
    </left>
    <bottom>
-      <Pane prefHeight="48.0" prefWidth="1280.0" style="-fx-background-color: #00ffaa;" BorderPane.alignment="CENTER" />
+      <Pane prefHeight="50.0" prefWidth="1280.0" style="-fx-background-color: #00ffaa;" BorderPane.alignment="CENTER" />
    </bottom>
    <right>
       <Pane prefHeight="560.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
@@ -70,9 +70,9 @@
    <center>
       <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #001f3d;" BorderPane.alignment="CENTER">
          <children>
-            <ScrollPane fx:id="P_scroll" prefHeight="560.0" prefWidth="1179.2" style="-fx-background-color: #001f3d;">
+            <ScrollPane fx:id="P_scroll" prefHeight="597.6" prefWidth="1179.2" style="-fx-background-color: #001f3d;">
                <content>
-                  <GridPane fx:id="P_grid" prefHeight="560.0" prefWidth="1179.2" style="-fx-background-color: #001f3d;">
+                  <GridPane fx:id="P_grid" prefHeight="597.6" prefWidth="1179.2" style="-fx-background-color: #001f3d;">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
