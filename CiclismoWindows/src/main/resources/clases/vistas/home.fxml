@@ -71,7 +71,6 @@
          <children>
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #001f3d;">
                <children>
-                  <ListView fx:id="vl_respuestas" layoutX="459.0" prefHeight="258.0" prefWidth="507.0" />
                   <ScrollPane prefHeight="597.6" prefWidth="1197.2">
                      <content>
                         <GridPane prefHeight="597.6" prefWidth="1179.2" style="-fx-background-color: #001f3d;">
@@ -87,6 +86,7 @@
                         </GridPane>
                      </content>
                   </ScrollPane>
+                  <ListView fx:id="vl_respuestas" layoutX="455.0" prefHeight="258.0" prefWidth="507.0" visible="false" />
                </children>
             </Pane>
          </children>
