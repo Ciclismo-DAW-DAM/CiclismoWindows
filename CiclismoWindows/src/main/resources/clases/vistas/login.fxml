@@ -20,14 +20,14 @@
             <Font name="System Bold Italic" size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="correoLog" layoutX="512.0" layoutY="360.0" prefHeight="30.0" prefWidth="256.0" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px;" />
+      <TextField fx:id="correoLog" layoutX="512.0" layoutY="360.0" prefHeight="30.0" prefWidth="256.0" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa;" />
       <Label layoutX="529.0" layoutY="419.0" text="Contraseña" textFill="#f3f3f3">
          <font>
             <Font name="System Bold Italic" size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="contrasenaLog" layoutX="512.0" layoutY="444.0" prefHeight="30.0" prefWidth="256.0" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px;" />
-      <Button fx:id="botonLog" layoutX="512.0" layoutY="503.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="256.0" style="-fx-background-color: #00ffaa;" text="Iniciar sesión">
+      <TextField fx:id="contrasenaLog" layoutX="512.0" layoutY="444.0" prefHeight="30.0" prefWidth="256.0" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa;" />
+      <Button fx:id="botonLog" layoutX="512.0" layoutY="503.0" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="37.0" prefWidth="256.0" style="-fx-background-color: #00ffaa;" text="Iniciar sesión">
          <font>
             <Font size="17.0" />
          </font>
@@ -41,12 +41,12 @@
             </ImageView>
          </children>
       </Pane>
-      <Button fx:id="botonRegistrarse" layoutX="604.0" layoutY="630.0" mnemonicParsing="false" style="-fx-background-color: #001f3d;" text="Registrarse" textFill="#00ffaa">
+      <Button fx:id="botonRegistrarse" layoutX="604.0" layoutY="630.0" mnemonicParsing="false" onAction="#registrarse" style="-fx-background-color: #001f3d;" text="Registrarse" textFill="#00ffaa">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="botonContrasena" layoutX="563.0" layoutY="589.0" mnemonicParsing="false" style="-fx-background-color: #001f3d;" text="¿Olvidaste tu contraseña?" textFill="#f3f3f3">
+      <Button fx:id="botonContrasena" layoutX="563.0" layoutY="589.0" mnemonicParsing="false" onAction="#recuperarContrasena" style="-fx-background-color: #001f3d;" text="¿Olvidaste tu contraseña?" textFill="#f3f3f3">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font>
