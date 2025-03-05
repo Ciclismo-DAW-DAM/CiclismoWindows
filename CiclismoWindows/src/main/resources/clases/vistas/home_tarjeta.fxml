@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="349.0" prefWidth="480.0" style="-fx-background-color: #001f3d; -fx-border-color: #FFFFFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.home_TarjetaController">
+   <children>
+      <ImageView fx:id="imgTarjeta" fitHeight="180.0" fitWidth="320.0" layoutX="80.0" layoutY="20.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="38.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true" translateY="-79.0">
+         <image>
+            <Image url="@/img/home_tarjeta_position.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="txtDireccion" layoutX="84.0" layoutY="300.0" text="Dirección" textFill="WHITE" translateY="-80.0">
+         <font>
+            <Font name="Open Sans Regular" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtDescripcion" alignment="TOP_LEFT" layoutX="38.0" layoutY="261.0" prefHeight="74.0" prefWidth="433.0" text="Descripcion de la carrera asl;dkjfa;lsdkfjalsjdfal;sdjf;ajsdfakjsdf;l" textFill="WHITE">
+         <font>
+            <Font name="Open Sans Regular" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -71,9 +71,9 @@
          <children>
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #001f3d;">
                <children>
-                  <ScrollPane prefHeight="597.6" prefWidth="1197.2">
+                  <ScrollPane fx:id="P_scroll" layoutX="10.0" layoutY="9.0" prefHeight="579.6" prefWidth="1158.2" style="-fx-border-color: transparent; -fx-background-color: transparent;">
                      <content>
-                        <GridPane prefHeight="597.6" prefWidth="1179.2" style="-fx-background-color: #001f3d;">
+                        <GridPane fx:id="P_grid" alignment="CENTER" prefHeight="561.0" prefWidth="1158.0" style="-fx-background-color: #001f3d; -fx-padding: 15px;">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
