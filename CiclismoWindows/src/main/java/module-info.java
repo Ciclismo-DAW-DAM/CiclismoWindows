@@ -5,9 +5,11 @@ module clases.ciclismowindows {
     requires retrofit2.converter.gson;
     requires com.google.gson;
     requires okhttp3;
+
     exports Conexion;
 
 
     opens clases.ciclismowindows to javafx.fxml;
     exports clases.ciclismowindows;
+    exports controladores;
 }
