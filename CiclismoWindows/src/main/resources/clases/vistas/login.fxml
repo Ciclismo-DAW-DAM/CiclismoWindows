@@ -29,7 +29,7 @@
       <TextField fx:id="contrasenaLog" layoutX="512.0" layoutY="444.0" prefHeight="30.0" prefWidth="256.0" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa;" />
       <Button fx:id="botonLog" layoutX="512.0" layoutY="503.0" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="37.0" prefWidth="256.0" style="-fx-background-color: #00ffaa;" text="Iniciar sesión">
          <font>
-            <Font size="17.0" />
+            <Font name="System Bold Italic" size="17.0" />
          </font>
       </Button>
       <Pane layoutX="550.0" layoutY="60.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f3f3f3; -fx-background-radius: 20px; -fx-border-radius: 20px;">
