@@ -1,4 +1,60 @@
 package controladores;
 
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
 public class perfilController {
+    @FXML
+    private Button cambiarContrasenaPerfil;
+
+    @FXML
+    private TextField contrasenaPerfil;
+
+    @FXML
+    private TextField emailPerfil;
+
+    @FXML
+    private Button homePerfil;
+
+    @FXML
+    private TextField nombrePerfil;
+
+    @FXML
+    private void volverHome(){
+        try {
+            // Cargar el archivo FXML
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/clases/vistas/home.fxml"));
+            Parent root = loader.load();
+
+            // Obtener la escena actual
+            Scene scene = new Scene(root);
+
+            // Obtener el escenario (ventana) actual y cambiar la escena
+            Stage stage = (Stage) emailPerfil.getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();  // Mostrar la nueva ventana
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            mostrarAlerta("Error", "No se pudo cargar la nueva ventana.", Alert.AlertType.ERROR);
+        }
+    }
+
+    @FXML
+    private void cambiarContrasena(){}
+    private void mostrarAlerta(String titulo, String mensaje, Alert.AlertType tipo){
+        Alert alerta = new Alert(tipo);
+        alerta.setTitle(titulo);
+        alerta.setHeaderText(null);
+        alerta.setContentText(mensaje);
+        alerta.showAndWait();
+    }
 }
