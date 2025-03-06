@@ -17,8 +17,8 @@
    <top>
       <Pane prefHeight="72.0" prefWidth="1280.0" style="-fx-background-color: #00ffaa;" BorderPane.alignment="CENTER">
          <children>
-            <Pane layoutX="203.0" layoutY="11.0" prefHeight="50.0" prefWidth="5.0" style="-fx-background-color: #001f3d; -fx-background-radius: 15;" />
-            <Label layoutX="54.0" layoutY="11.0" text="Ciclismo" textFill="#001f3d">
+            <Pane layoutX="222.0" layoutY="11.0" prefHeight="50.0" prefWidth="5.0" style="-fx-background-color: #001f3d; -fx-background-radius: 15;" />
+            <Label layoutX="77.0" layoutY="11.0" text="Ciclismo" textFill="#001f3d">
                <font>
                   <Font name="Open Sans Regular" size="35.0" />
                </font>
@@ -28,7 +28,7 @@
                   <Font name="Arial" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="238.0" layoutY="28.0" text="Participaciones" textFill="#001f3d">
+            <Label layoutX="239.0" layoutY="21.0" text="Participaciones" textFill="#001f3d">
                <font>
                   <Font name="Arial" size="25.0" />
                </font>
@@ -51,6 +51,11 @@
                   </Pane>
                </children>
             </VBox>
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="20.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/img/logo.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </top>
@@ -64,11 +69,11 @@
       <Pane prefHeight="560.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
    </right>
    <center>
-      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #001f3d;" BorderPane.alignment="CENTER">
          <children>
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #001f3d;">
                <children>
-                  <ScrollPane fx:id="P_scroll" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="14.0" prefHeight="597.6" prefWidth="1179.2" style="-fx-border-color: transparent; -fx-background-color: transparent;" vbarPolicy="AS_NEEDED">
+                  <ScrollPane fx:id="P_scroll" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="14.0" prefHeight="597.6" prefWidth="1179.2" style="-fx-border-color: transparent; -fx-background-color: #001f3d;" vbarPolicy="AS_NEEDED">
                      <content>
                         <Pane fx:id="PanelPrueba" prefHeight="424.0" prefWidth="1174.0" style="-fx-background-color: #001f3d;" />
                      </content>
