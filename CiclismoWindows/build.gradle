@@ -65,7 +65,8 @@ jlinkZip {
 sourceSets {
   main {
     resources {
-      srcDirs = ["src/main/resources"]
+      srcDirs = ["src/main/resources", "src/main/java"]
+      includes = ["**/*.fxml","**/*.properties","**/*.jasper","**/*.png","**/*.html","**/*.jrxml","**/*.jpg"]
     }
   }
 }
