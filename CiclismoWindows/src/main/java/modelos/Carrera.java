@@ -5,12 +5,13 @@ public class Carrera {
     private String direccion;
     private String urlImagen;
     private String descripcion;
+    private String nombre;
 
-
-    public Carrera(String direccion, String urlImagen, String descripcion) {
+    public Carrera(String direccion, String urlImagen, String descripcion, String nombre) {
         this.direccion = direccion;
         this.urlImagen = urlImagen;
         this.descripcion = descripcion;
+        this.nombre = nombre;
     }
 
     public String getDireccion() {
@@ -35,6 +36,14 @@ public class Carrera {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
 
