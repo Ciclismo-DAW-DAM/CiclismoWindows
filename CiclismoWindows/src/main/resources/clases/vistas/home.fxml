@@ -8,10 +8,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -71,19 +68,9 @@
          <children>
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #001f3d;">
                <children>
-                  <ScrollPane fx:id="P_scroll" layoutX="10.0" layoutY="9.0" prefHeight="579.6" prefWidth="1158.2" style="-fx-border-color: transparent; -fx-background-color: transparent;">
+                  <ScrollPane fx:id="P_scroll" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="14.0" prefHeight="597.6" prefWidth="1179.2" style="-fx-border-color: transparent; -fx-background-color: transparent;" vbarPolicy="AS_NEEDED">
                      <content>
-                        <GridPane fx:id="P_grid" alignment="CENTER" prefHeight="561.0" prefWidth="1158.0" style="-fx-background-color: #001f3d; -fx-padding: 15px;">
-                          <columnConstraints>
-                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                          </columnConstraints>
-                          <rowConstraints>
-                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                          </rowConstraints>
-                        </GridPane>
+                        <Pane fx:id="PanelPrueba" prefHeight="424.0" prefWidth="1174.0" style="-fx-background-color: #001f3d;" />
                      </content>
                   </ScrollPane>
                   <ListView fx:id="vl_respuestas" layoutX="455.0" prefHeight="258.0" prefWidth="507.0" visible="false" />
