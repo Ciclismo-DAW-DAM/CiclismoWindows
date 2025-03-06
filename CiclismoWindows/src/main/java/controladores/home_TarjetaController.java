@@ -2,11 +2,16 @@ package controladores;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 import modelos.Carrera;
+
+import java.io.IOException;
 
 
 public class home_TarjetaController {
@@ -30,7 +35,14 @@ public class home_TarjetaController {
 
     @FXML
     void onClick(MouseEvent event) {
-
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/clases/vistas/detalleCarrera.fxml"));
+            Parent vistas = loader.load();
+            Stage stage = (Stage) txtNombre.getScene().getWindow();
+            stage.getScene().setRoot(vistas);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 

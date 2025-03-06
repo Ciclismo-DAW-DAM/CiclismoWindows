@@ -14,7 +14,7 @@ public class HelloApplication extends Application {
         Stage stage = new Stage();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/clases/vistas/detalleCarrera.fxml"));
         Parent root = loader.load();
-        Scene scene = new Scene(root, 600, 400);
+        Scene scene = new Scene(root, 1300, 780);
         primaryStage.setTitle("Ciclismo");
         primaryStage.setScene(scene);
         primaryStage.show();
