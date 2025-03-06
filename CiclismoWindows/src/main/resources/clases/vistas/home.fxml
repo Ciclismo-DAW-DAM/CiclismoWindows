@@ -18,17 +18,17 @@
       <Pane prefHeight="72.0" prefWidth="1280.0" style="-fx-background-color: #00ffaa;" BorderPane.alignment="CENTER">
          <children>
             <Pane layoutX="222.0" layoutY="11.0" prefHeight="50.0" prefWidth="5.0" style="-fx-background-color: #001f3d; -fx-background-radius: 15;" />
-            <Label layoutX="77.0" layoutY="11.0" text="Ciclismo" textFill="#001f3d">
+            <Label layoutX="77.0" layoutY="11.0" onMouseClicked="#onInicio" text="Ciclismo" textFill="#001f3d">
                <font>
                   <Font name="Open Sans Regular" size="35.0" />
                </font>
             </Label>
-            <Label layoutX="1153.0" layoutY="21.0" text="Perfil" textFill="#001f3d">
+            <Label layoutX="1153.0" layoutY="21.0" onMouseClicked="#onPerfil" text="Perfil" textFill="#001f3d">
                <font>
                   <Font name="Arial" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="239.0" layoutY="21.0" text="Participaciones" textFill="#001f3d">
+            <Label layoutX="239.0" layoutY="21.0" onMouseClicked="#onParticipaciones" text="Participaciones" textFill="#001f3d">
                <font>
                   <Font name="Arial" size="25.0" />
                </font>
@@ -51,7 +51,7 @@
                   </Pane>
                </children>
             </VBox>
-            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="20.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="20.0" layoutY="13.0" onMouseClicked="#onInicio" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@/img/logo.png" />
                </image>

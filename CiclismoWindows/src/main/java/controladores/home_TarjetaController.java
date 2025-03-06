@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import modelos.Carrera;
 
 
@@ -25,6 +26,12 @@ public class home_TarjetaController {
 
     @FXML
     public void initialize() {}
+
+
+    @FXML
+    void onClick(MouseEvent event) {
+
+    }
 
 
     public void cargarDatosTarjeta(Carrera carrera){
