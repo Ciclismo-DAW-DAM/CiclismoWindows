@@ -69,6 +69,12 @@ public class perfilController {
 
         // Configurar eventos de botones
         configurarEventos();
+
+        homePerfil.setCursor(javafx.scene.Cursor.HAND);
+        eliminarUsuario.setCursor(javafx.scene.Cursor.HAND);
+        confirmarBoton.setCursor(javafx.scene.Cursor.HAND);
+        actualizarDatos.setCursor(javafx.scene.Cursor.HAND);
+        cerrarSesion.setCursor(javafx.scene.Cursor.HAND);
     }
 
     /**
