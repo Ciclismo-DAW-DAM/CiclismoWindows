@@ -192,6 +192,12 @@ public class perfilController {
         mostrarAlerta("Éxito", "Datos actualizados correctamente.", Alert.AlertType.INFORMATION);
     }
 
+    @FXML
+    private void eliminarUsuario(){}
+
+    @FXML
+    private void cerrarSesion(){}
+
     private void mostrarAlerta(String titulo, String mensaje, Alert.AlertType tipo){
         Alert alerta = new Alert(tipo);
         alerta.setTitle(titulo);

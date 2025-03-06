@@ -74,12 +74,12 @@
             <TextField fx:id="kmRecorridos" editable="false" layoutX="518.0" layoutY="163.0" prefHeight="25.0" prefWidth="196.0" promptText="0" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
             <TextField fx:id="vecesGanadas" editable="false" layoutX="518.0" layoutY="284.0" prefWidth="196.0" promptText="0" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
             <TextField fx:id="totalPagado" editable="false" layoutX="518.0" layoutY="411.0" prefWidth="196.0" promptText="0€" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
-            <Button fx:id="cerrarSesion" layoutX="587.0" layoutY="520.0" mnemonicParsing="false" style="-fx-background-color: #00ffaa;" text="Cerrar sesión" textFill="#001f3d">
+            <Button fx:id="cerrarSesion" layoutX="587.0" layoutY="520.0" mnemonicParsing="false" onAction="#cerrarSesion" style="-fx-background-color: #00ffaa;" text="Cerrar sesión" textFill="#001f3d">
                <font>
                   <Font name="System Bold Italic" size="17.0" />
                </font>
             </Button>
-            <Button fx:id="eliminarUsuario" layoutX="376.0" layoutY="520.0" mnemonicParsing="false" style="-fx-background-color: #00ffaa;" text="Eliminar usuario" textFill="#001f3d">
+            <Button fx:id="eliminarUsuario" layoutX="376.0" layoutY="520.0" mnemonicParsing="false" onAction="#eliminarUsuario" style="-fx-background-color: #00ffaa;" text="Eliminar usuario" textFill="#001f3d">
                <font>
                   <Font name="System Bold Italic" size="17.0" />
                </font>
@@ -110,7 +110,7 @@
                   <TextField fx:id="confirmarNuevoNombre" layoutX="39.0" layoutY="112.0" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
                   <TextField fx:id="nuevaPsswd" layoutX="39.0" layoutY="171.0" style="-fx-background-color: #001f3d; -fx-border-width: 2px; -fx-border-color: #f3f3f3; -fx-font-weight: bold; -fx-text-fill: #00ffaa;" />
                   <TextField fx:id="confirmarNuevaPasswd" layoutX="39.0" layoutY="237.0" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-font-weight: bold; -fx-text-fill: #00ffaa;" />
-                  <Button fx:id="confirmarBoton" layoutX="230.0" layoutY="267.0" mnemonicParsing="false" style="-fx-background-color: #00ffaa;" text="Confirmar" textFill="#001f3d">
+                  <Button fx:id="confirmarBoton" layoutX="230.0" layoutY="267.0" mnemonicParsing="false" onAction="#cambiarContrasena" style="-fx-background-color: #00ffaa;" text="Confirmar" textFill="#001f3d">
                      <font>
                         <Font name="System Bold Italic" size="13.0" />
                      </font>
