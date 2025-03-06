@@ -36,13 +36,47 @@ public class homeController {
     @FXML
     private ListView<String> vl_respuestas = new ListView<>();
 
+    @FXML
+    void onParticipaciones(MouseEvent event) {
+            participaciones = true;
+
+    }
+
+    @FXML
+    void onInicio(MouseEvent event) {
+        participaciones = false;
+    }
+
+    @FXML
+    void onPerfil(MouseEvent event) {
+
+    }
+
+    private boolean participaciones = false;
+
+
+    // String
     ObservableList<String> filtrado = FXCollections.observableArrayList();
     private ObservableList<String> resultados = FXCollections.observableArrayList();
 
+    // Carrera
     private List<Carrera> carreras = new ArrayList<>();
     private  List<Carrera> carreraFiltradas = new ArrayList<>();
 
+    @FXML
+    public void initialize() {
+        inicializarLisener();
 
+        funcionPrincipal();
+    }
+
+    private void funcionPrincipal() {
+        cargarCarreras();
+
+        cargarResultadosLista(carreras);
+
+        crearTarjetas(carreras);
+    }
 
     private void cargarCarreras(){
 
@@ -222,18 +256,6 @@ public class homeController {
         );
     }
 
-
-    @FXML
-    public void initialize() {
-        inicializarLisener();
-
-        cargarCarreras();
-        crearTarjetas(carreras);
-
-        cargarResultadosLista(carreras);
-
-    }
-
     private void  inicializarLisener(){
         inicializarLisenerBusqueda();
         inicializarLisenerListaView();
@@ -357,7 +379,6 @@ public class homeController {
         }
 
     }
-
 
     private void cargarResultadosLista(List<Carrera> list){
         resultados.clear();
