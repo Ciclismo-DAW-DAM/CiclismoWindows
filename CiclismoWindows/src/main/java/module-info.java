@@ -5,6 +5,7 @@ module CiclismoWindows.main {
     requires retrofit2.converter.gson;
     requires com.google.gson;
     requires okhttp3;
+    requires java.desktop;
 
     exports Conexion;
 

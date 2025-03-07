@@ -7,6 +7,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.perfilController">
@@ -45,19 +46,19 @@
                   <Font name="System Bold Italic" size="16.0" />
                </font>
             </Label>
-            <Label layoutX="122.0" layoutY="252.0" text="Ubicación preferida" textFill="#00ffaa">
+            <Label layoutX="121.0" layoutY="218.0" text="Ubicación preferida" textFill="#00ffaa">
                <font>
                   <Font name="System Bold Italic" size="16.0" />
                </font>
             </Label>
-            <Label layoutX="122.0" layoutY="378.0" text="Categoría preferida" textFill="#00ffaa">
+            <Label layoutX="121.0" layoutY="316.0" text="Categoría preferida" textFill="#00ffaa">
                <font>
                   <Font name="System Bold Italic" size="16.0" />
                </font>
             </Label>
             <TextField fx:id="carrerasParticipadas" editable="false" layoutX="136.0" layoutY="163.0" prefHeight="25.0" prefWidth="196.0" promptText="0" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
-            <TextField fx:id="ubicacionPreferida" editable="false" layoutX="136.0" layoutY="284.0" prefHeight="25.0" prefWidth="196.0" promptText="Ninguna" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
-            <TextField fx:id="categoríapref" editable="false" layoutX="136.0" layoutY="411.0" prefHeight="25.0" prefWidth="196.0" promptText="Ninguna" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-font-weight: bold; -fx-text-fill: #00ffaa;" />
+            <TextField fx:id="ubicacionPreferida" editable="false" layoutX="136.0" layoutY="254.0" prefHeight="25.0" prefWidth="196.0" promptText="Ninguna" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
+            <TextField fx:id="categoríapref" editable="false" layoutX="136.0" layoutY="350.0" prefHeight="25.0" prefWidth="196.0" promptText="Ninguna" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-font-weight: bold; -fx-text-fill: #00ffaa;" />
             <Button fx:id="actualizarDatos" layoutX="136.0" layoutY="520.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="193.0" style="-fx-background-color: #00ffaa;" text="Actualizar datos" textFill="#001f3d">
                <font>
                   <Font name="System Bold Italic" size="17.0" />
@@ -68,19 +69,19 @@
                   <Font name="System Bold Italic" size="16.0" />
                </font>
             </Label>
-            <Label layoutX="506.0" layoutY="252.0" text="Veces ganadas" textFill="#00ffaa">
+            <Label layoutX="506.0" layoutY="218.0" text="Veces ganadas" textFill="#00ffaa">
                <font>
                   <Font name="System Bold Italic" size="16.0" />
                </font>
             </Label>
-            <Label layoutX="511.0" layoutY="378.0" text="Total pagado" textFill="#00ffaa">
+            <Label layoutX="503.0" layoutY="316.0" text="Total pagado" textFill="#00ffaa">
                <font>
                   <Font name="System Bold Italic" size="16.0" />
                </font>
             </Label>
             <TextField fx:id="kmRecorridos" editable="false" layoutX="518.0" layoutY="163.0" prefHeight="25.0" prefWidth="196.0" promptText="0" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
-            <TextField fx:id="vecesGanadas" editable="false" layoutX="518.0" layoutY="284.0" prefWidth="196.0" promptText="0" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
-            <TextField fx:id="totalPagado" editable="false" layoutX="518.0" layoutY="411.0" prefWidth="196.0" promptText="0€" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
+            <TextField fx:id="vecesGanadas" editable="false" layoutX="518.0" layoutY="254.0" prefWidth="196.0" promptText="0" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
+            <TextField fx:id="totalPagado" editable="false" layoutX="518.0" layoutY="350.0" prefWidth="196.0" promptText="0€" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
             <Button fx:id="cerrarSesion" layoutX="587.0" layoutY="520.0" mnemonicParsing="false" onAction="#cerrarSesion" style="-fx-background-color: #00ffaa;" text="Cerrar sesión" textFill="#001f3d">
                <font>
                   <Font name="System Bold Italic" size="17.0" />
@@ -91,7 +92,7 @@
                   <Font name="System Bold Italic" size="17.0" />
                </font>
             </Button>
-            <Pane fx:id="formulario" layoutX="865.0" layoutY="145.0" prefHeight="308.0" prefWidth="325.0" style="-fx-border-color: #00ffaa; -fx-border-width: 2px; -fx-border-radius: 5px;">
+            <Pane fx:id="formulario" layoutX="908.0" layoutY="145.0" prefHeight="308.0" prefWidth="325.0" style="-fx-border-color: #00ffaa; -fx-border-width: 2px; -fx-border-radius: 5px;">
                <children>
                   <Label layoutX="27.0" layoutY="33.0" text="Nuevo nombre" textFill="#00ffaa">
                      <font>
@@ -124,6 +125,26 @@
                   </Button>
                </children>
             </Pane>
+            <Label layoutX="122.0" layoutY="415.0" text="Edad" textFill="#00ffaa">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="506.0" layoutY="415.0" text="Género" textFill="#00ffaa">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <TextField layoutX="136.0" layoutY="453.0" prefHeight="30.0" prefWidth="196.0" promptText="0" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
+            <TextField layoutX="518.0" layoutY="453.0" prefWidth="196.0" promptText="Hombre,Mujer..." style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
+            <ImageView fx:id="imagenPerfil" fitHeight="105.0" fitWidth="133.0" layoutX="36.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="urlImagen" layoutX="255.0" layoutY="50.0" promptText="URL" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
+            <Label layoutX="255.0" layoutY="21.0" text="URL de foto de perfil" textFill="#00ffaa">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+            <StackPane fx:id="contenedorImagen" layoutX="36.0" layoutY="21.0" prefHeight="105.0" prefWidth="133.0" />
          </children>
       </Pane>
    </center>
