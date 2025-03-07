@@ -125,18 +125,18 @@
                   </Button>
                </children>
             </Pane>
-            <Label layoutX="122.0" layoutY="415.0" text="Edad" textFill="#00ffaa">
+            <Label layoutX="122.0" layoutY="409.0" text="Edad" textFill="#00ffaa">
                <font>
                   <Font name="System Bold Italic" size="16.0" />
                </font>
             </Label>
-            <Label layoutX="506.0" layoutY="415.0" text="Género" textFill="#00ffaa">
+            <Label layoutX="504.0" layoutY="409.0" text="Género" textFill="#00ffaa">
                <font>
                   <Font name="System Bold Italic" size="16.0" />
                </font>
             </Label>
-            <TextField layoutX="136.0" layoutY="453.0" prefHeight="30.0" prefWidth="196.0" promptText="0" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
-            <TextField layoutX="518.0" layoutY="453.0" prefWidth="196.0" promptText="Hombre,Mujer..." style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
+            <TextField fx:id="edadPerfil" layoutX="136.0" layoutY="440.0" prefHeight="30.0" prefWidth="196.0" promptText="0" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
+            <TextField fx:id="generoPerfil" layoutX="518.0" layoutY="440.0" prefWidth="196.0" promptText="Hombre,Mujer..." style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
             <ImageView fx:id="imagenPerfil" fitHeight="105.0" fitWidth="133.0" layoutX="36.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
             <TextField fx:id="urlImagen" layoutX="255.0" layoutY="50.0" promptText="URL" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
             <Label layoutX="255.0" layoutY="21.0" text="URL de foto de perfil" textFill="#00ffaa">

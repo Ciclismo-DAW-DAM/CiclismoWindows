@@ -23,6 +23,12 @@ public class perfilController {
     private Button actualizarDatos;
 
     @FXML
+    private TextField edadPerfil;
+
+    @FXML
+    private TextField generoPerfil;
+
+    @FXML
     private ImageView imagenPerfil;
 
     @FXML
@@ -189,6 +195,8 @@ public class perfilController {
         vecesGanadas.setDisable(disable);
         categoríapref.setDisable(disable);
         totalPagado.setDisable(disable);
+        edadPerfil.setDisable(disable);
+        generoPerfil.setDisable(disable);
     }
 
     @FXML
