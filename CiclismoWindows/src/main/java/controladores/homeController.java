@@ -13,8 +13,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
 import javafx.scene.layout.Pane;
-
-import modelos.Carrera;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
