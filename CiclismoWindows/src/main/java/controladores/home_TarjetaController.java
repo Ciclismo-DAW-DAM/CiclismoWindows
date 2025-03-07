@@ -1,6 +1,6 @@
 package controladores;
 
-import javafx.fxml.FXML;
+import Conexion.Carrera;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -9,7 +9,6 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import modelos.Carrera;
 
 import java.io.IOException;
 
@@ -50,9 +49,9 @@ public class home_TarjetaController {
 
         if (carrera != null) {
             txtNombre.setText(carrera.getNombre());
-            txtDireccion.setText(carrera.getDireccion());
+            txtDireccion.setText(carrera.getUbicacion());
             txtDescripcion.setText(carrera.getDescripcion());
-            Image image = new Image(carrera.getUrlImagen());
+            Image image = new Image("/imagenes/imagen2.jpg");
             imgTarjeta.setImage(image);
             imgTarjeta.setFitWidth(320); // Ancho del ImageView
             imgTarjeta.setFitHeight(180); // Alto del ImageView
