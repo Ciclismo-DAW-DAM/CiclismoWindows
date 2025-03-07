@@ -1,16 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="controladores.loginController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-  </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-  <Label fx:id="welcomeText"/>
-
-</VBox>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #001f3d;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.loginController">
+   <children>
+      <Label layoutX="499.0" layoutY="277.0" text="Inicio Sesión" textFill="#f3f3f3">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="528.0" layoutY="335.0" text="Correo electrónico" textFill="#f3f3f3">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="correoLog" layoutX="512.0" layoutY="360.0" prefHeight="30.0" prefWidth="256.0" promptText="user@gmail.com" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
+      <Label layoutX="529.0" layoutY="419.0" text="Contraseña" textFill="#f3f3f3">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="contrasenaLog" layoutX="512.0" layoutY="444.0" prefHeight="30.0" prefWidth="256.0" promptText="Password" style="-fx-background-color: #001f3d; -fx-border-color: #f3f3f3; -fx-border-width: 2px; -fx-text-fill: #00ffaa; -fx-font-weight: bold;" />
+      <Button fx:id="botonLog" layoutX="512.0" layoutY="503.0" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="37.0" prefWidth="256.0" style="-fx-background-color: #00ffaa;" text="Iniciar sesión">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <Pane layoutX="550.0" layoutY="60.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f3f3f3; -fx-background-radius: 20px; -fx-border-radius: 20px;">
+         <children>
+            <ImageView fitHeight="174.0" fitWidth="158.0" layoutX="19.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../../Downloads/newTel.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button fx:id="botonRegistrarse" layoutX="604.0" layoutY="630.0" mnemonicParsing="false" onAction="#registrarse" style="-fx-background-color: #001f3d;" text="Registrarse" textFill="#00ffaa">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonContrasena" layoutX="563.0" layoutY="589.0" mnemonicParsing="false" onAction="#recuperarContrasena" style="-fx-background-color: #001f3d;" text="¿Olvidaste tu contraseña?" textFill="#f3f3f3">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

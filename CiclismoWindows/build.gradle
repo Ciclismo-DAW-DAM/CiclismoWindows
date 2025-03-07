@@ -25,7 +25,7 @@ tasks.withType(JavaCompile) {
 }
 
 application {
-  mainModule = 'clases.ciclismowindows'
+  mainModule = 'CiclismoWindows.main'
   mainClass = 'clases.ciclismowindows.HelloApplication'
 }
 
@@ -35,7 +35,6 @@ javafx {
 }
 
 dependencies {
-
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
   implementation 'com.squareup.retrofit2:retrofit:2.11.0'
@@ -47,7 +46,8 @@ dependencies {
 }
 
 test {
-useJUnitPlatform()}
+  useJUnitPlatform()
+}
 
 /*
 jlink {
