@@ -93,13 +93,9 @@ public class detalleCarreraController {
 
         labelParticipaciones.setOnMouseClicked(event -> {
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/clases/vistas/home.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/clases/vistas/participaciones.fxml"));
                 Parent vistas = loader.load();
                 Stage stage = (Stage) labelParticipaciones.getScene().getWindow();
-
-                homeController home = loader.getController();
-                home.navegacionParticipantes();
-
                 stage.getScene().setRoot(vistas);
             } catch (IOException e) {
                 e.printStackTrace();

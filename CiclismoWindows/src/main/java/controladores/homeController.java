@@ -6,7 +6,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 
 import javafx.scene.Node;
-import javafx.scene.Parent;
 import javafx.scene.control.ListView;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
@@ -14,7 +13,6 @@ import javafx.scene.input.MouseEvent;
 
 import javafx.scene.layout.Pane;
 
-import javafx.stage.Stage;
 import modelos.Carrera;
 
 import java.io.IOException;
@@ -41,26 +39,17 @@ public class homeController {
     @FXML
     void onParticipaciones(MouseEvent event) {
             participaciones = true;
-        System.out.println("Participaciones: " + participaciones);
 
     }
 
     @FXML
     void onInicio(MouseEvent event) {
         participaciones = false;
-        System.out.println("Participaciones: " + participaciones);
     }
 
     @FXML
     void onPerfil(MouseEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/clases/vistas/perfil.fxml"));
-            Parent vistas = loader.load();
-            Stage stage = (Stage) txt_Buscardor.getScene().getWindow();
-            stage.getScene().setRoot(vistas);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+
     }
 
     private boolean participaciones = false;
@@ -79,11 +68,6 @@ public class homeController {
         inicializarLisener();
 
         funcionPrincipal();
-    }
-
-    public void navegacionParticipantes(){
-        participaciones = true;
-        System.out.println("Participaciones: " + participaciones);
     }
 
     private void funcionPrincipal() {

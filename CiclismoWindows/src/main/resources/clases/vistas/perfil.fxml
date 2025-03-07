@@ -26,9 +26,9 @@
                   <Font name="Arial" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="239.0" layoutY="21.0" prefHeight="36.0" prefWidth="316.0" text="Perfil de &quot;nombre&quot;" textFill="#001f3d">
+            <Label layoutX="239.0" layoutY="21.0" text="Participaciones" textFill="#001f3d">
                <font>
-                  <Font size="25.0" />
+                  <Font name="Arial" size="25.0" />
                </font>
             </Label>
 
