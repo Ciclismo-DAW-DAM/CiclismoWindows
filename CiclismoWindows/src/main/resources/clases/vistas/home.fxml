@@ -23,7 +23,7 @@
                   <Font name="Open Sans Regular" size="35.0" />
                </font>
             </Label>
-            <Label layoutX="1153.0" layoutY="21.0" onMouseClicked="#onPerfil" text="Perfil" textFill="#001f3d">
+            <Label fx:id="labelPerfil" layoutX="1153.0" layoutY="21.0" onMouseClicked="#onPerfil" text="Perfil" textFill="#001f3d">
                <font>
                   <Font name="Arial" size="25.0" />
                </font>
