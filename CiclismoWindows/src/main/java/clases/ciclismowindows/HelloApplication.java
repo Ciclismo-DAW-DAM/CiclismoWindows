@@ -12,9 +12,9 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         Stage stage = new Stage();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/clases/vistas/detalleCarrera.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/clases/vistas/home.fxml"));
         Parent root = loader.load();
-        Scene scene = new Scene(root, 1300, 780);
+        Scene scene = new Scene(root, 1280, 720);
         primaryStage.setTitle("Ciclismo");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
