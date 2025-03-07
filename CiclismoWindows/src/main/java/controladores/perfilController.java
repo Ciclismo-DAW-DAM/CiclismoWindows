@@ -8,13 +8,31 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
+import javafx.scene.paint.ImagePattern;
+import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
+import javafx.scene.image.ImageView;
+import java.awt.*;
 import java.io.IOException;
+import javafx.scene.image.Image;
 
 public class perfilController {
     @FXML
     private Button actualizarDatos;
+
+    @FXML
+    private TextField edadPerfil;
+
+    @FXML
+    private TextField generoPerfil;
+
+    @FXML
+    private ImageView imagenPerfil;
+
+    @FXML
+    private TextField urlImagen;
 
     @FXML
     private TextField carrerasParticipadas;
@@ -27,6 +45,11 @@ public class perfilController {
 
     @FXML
     private Button confirmarBoton;
+
+    @FXML
+    private StackPane contenedorImagen;
+
+    private Circle circle;
 
     @FXML
     private TextField confirmarNuevaPasswd;
@@ -70,11 +93,34 @@ public class perfilController {
         // Configurar eventos de botones
         configurarEventos();
 
+        // Crear el círculo y configurarlo
+        circle = new Circle(50);
+        circle.setStroke(javafx.scene.paint.Color.BLACK);
+
+        // Agregar el círculo al contenedor
+        contenedorImagen.getChildren().add(circle);
+
+        // Configurar evento de actualización de imagen
+        urlImagen.setOnAction(event -> actualizarImagen());
+
+
         homePerfil.setCursor(javafx.scene.Cursor.HAND);
         eliminarUsuario.setCursor(javafx.scene.Cursor.HAND);
         confirmarBoton.setCursor(javafx.scene.Cursor.HAND);
         actualizarDatos.setCursor(javafx.scene.Cursor.HAND);
         cerrarSesion.setCursor(javafx.scene.Cursor.HAND);
+    }
+
+    private void actualizarImagen() {
+        String url = urlImagen.getText();
+        if (url != null && !url.trim().isEmpty()) {
+            try {
+                Image image = new Image(url, false);
+                circle.setFill(new ImagePattern(image)); // Asignar imagen al círculo
+            } catch (Exception e) {
+                System.out.println("Error al cargar la imagen: " + e.getMessage());
+            }
+        }
     }
 
     /**
@@ -149,6 +195,8 @@ public class perfilController {
         vecesGanadas.setDisable(disable);
         categoríapref.setDisable(disable);
         totalPagado.setDisable(disable);
+        edadPerfil.setDisable(disable);
+        generoPerfil.setDisable(disable);
     }
 
     @FXML
