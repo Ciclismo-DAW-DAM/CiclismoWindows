@@ -11,14 +11,14 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Stage stage = new Stage();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/clases/vistas/perfil.fxml"));
+        Stage stage = primaryStage;
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/clases/vistas/home.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root, 1280, 720);
-        primaryStage.setTitle("Ciclismo");
-        primaryStage.setScene(scene);
-        primaryStage.setResizable(false);
-        primaryStage.show();
+        stage.setTitle("Ciclismo");
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
     }
 
     public static void main(String[] args) {
