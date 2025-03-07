@@ -36,6 +36,31 @@ public class Carrera {
     @SerializedName("premios")
     private List <String> premios;
 
+    public Carrera(int id, String nombre, String descripcion, String fecha, String hora, int distancia_km, String ubicacion, String coordenadas, String desnivel, String precio_inscripcion, String plazas_disponibles, String estado, String categoria, String imagen, List<String> premios) {
+        this.id = id;
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.fecha = fecha;
+        this.hora = hora;
+        this.distancia_km = distancia_km;
+        this.ubicacion = ubicacion;
+        this.coordenadas = coordenadas;
+        this.desnivel = desnivel;
+        this.precio_inscripcion = precio_inscripcion;
+        this.plazas_disponibles = plazas_disponibles;
+        this.estado = estado;
+        this.categoria = categoria;
+        this.imagen = imagen;
+        this.premios = premios;
+    }
+
+    public Carrera(int id, String nombre, String descripcion, String ubicacion) {
+        this.id = id;
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.ubicacion = ubicacion;
+    }
+
     public int getId() {
         return id;
     }

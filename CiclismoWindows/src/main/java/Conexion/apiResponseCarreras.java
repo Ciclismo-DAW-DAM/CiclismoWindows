@@ -2,10 +2,9 @@ package Conexion;
 
 import java.util.List;
 
-import modelos.Carrera;
 import com.google.gson.annotations.SerializedName;
 
-public class apiResponse {
+public class apiResponseCarreras {
     @SerializedName("carrerasRunning")
     private List<Carrera> carreras;
 
