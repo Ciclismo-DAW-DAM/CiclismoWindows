@@ -329,7 +329,7 @@ public class homeController {
         int column = 0; // Columna inicial
         int row = 0;    // Fila inicial
 
-        double tamanioPorPanel = 489;
+        double tamanioPorPanel = 372;
 
         double x = 0;
 
@@ -342,7 +342,7 @@ public class homeController {
                 Node tarjeta = fxmlLoader.load();
 
                 Pane tarjetaPane = (Pane) tarjeta;
-                tarjetaPane.setPrefSize(480, 349);
+                tarjetaPane.setPrefSize(351, 292);
 
                 // Obtener el controlador de la tarjeta
                 home_TarjetaController tarjetaController = fxmlLoader.getController();
@@ -353,13 +353,16 @@ public class homeController {
 
                 // VAmos a poner segun la tarjeta
                 if (column == 0){
-                    x = 70;
+                    x = 36;
                 }
                 if (column == 1){
-                    x = 620;
+                    x = 412;
+                }
+                if (column == 2){
+                    x = 787;
                 }
 
-                double y = (tamanioPorPanel - 70) * row;
+                double y = (tamanioPorPanel - 40) * row;
 
                 tarjetaPane.setLayoutX(x);
                 tarjetaPane.setLayoutY(y);
@@ -369,7 +372,7 @@ public class homeController {
 
                 // Ajustar la posición de las tarjetas
                 column++;
-                if (column == 2) { // Cambiar de fila después de 3 columnas
+                if (column == 3) { // Cambiar de fila después de 3 columnas
                     column = 0;
                     row++;
                 }

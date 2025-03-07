@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -54,6 +55,8 @@ public class detalleCarreraController {
 
     @FXML
     private Label labelTiempoMaximo;
+
+
 
     @FXML
     public void initialize() {

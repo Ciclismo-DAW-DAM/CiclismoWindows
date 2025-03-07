@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
@@ -12,8 +13,8 @@
     <top>
         <Pane prefHeight="72.0" prefWidth="1280.0" style="-fx-background-color: #00ffaa;" BorderPane.alignment="CENTER">
             <children>
-                <Pane layoutX="203.0" layoutY="11.0" prefHeight="50.0" prefWidth="5.0" style="-fx-background-color: #001f3d; -fx-background-radius: 15;" />
-                <Label fx:id="labelCiclismo" layoutX="54.0" layoutY="11.0" text="Ciclismo" textFill="#001f3d">
+                <Pane layoutX="222.0" layoutY="11.0" prefHeight="50.0" prefWidth="5.0" style="-fx-background-color: #001f3d; -fx-background-radius: 15;" />
+                <Label fx:id="labelCiclismo" layoutX="77.0" layoutY="11.0" text="Ciclismo" textFill="#001f3d">
                     <font>
                         <Font name="Open Sans Regular" size="35.0" />
                     </font>
@@ -23,11 +24,25 @@
                         <Font name="Arial" size="25.0" />
                     </font>
                 </Label>
-                <Label fx:id="labelParticipaciones" layoutX="238.0" layoutY="28.0" text="Participaciones" textFill="#001f3d">
+                <Label fx:id="labelParticipaciones" layoutX="239.0" layoutY="21.0" text="Participaciones" textFill="#001f3d">
                     <font>
                         <Font name="Arial" size="25.0" />
                     </font>
                 </Label>
+                <VBox layoutX="505.0" layoutY="8.0" prefHeight="408.0" prefWidth="504.0">
+                    <children>
+                        <Pane prefHeight="55.0" prefWidth="504.0">
+                            <children>
+
+                            </children>
+                        </Pane>
+                    </children>
+                </VBox>
+                <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="20.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/img/logo.png" />
+                    </image>
+                </ImageView>
             </children>
         </Pane>
     </top>
@@ -40,51 +55,51 @@
     <right>
         <Pane prefHeight="560.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
     </right>
-   <center>
-      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
-         <children>
-            <Pane prefHeight="255.0" prefWidth="1180.0">
-               <children>
-                  <ImageView fx:id="imgView" fitHeight="221.0" fitWidth="1181.0" pickOnBounds="true" preserveRatio="true" />
-                  <Label fx:id="labelNombreCarrera" layoutX="14.0" layoutY="197.0" text="Label" textFill="WHITE" />
-               </children>
-            </Pane>
-            <Pane prefHeight="283.0" prefWidth="1180.0">
-               <children>
-                  <Label layoutY="7.0" text="Detalles de la carrera" textFill="WHITE">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="labelDescripcion" layoutX="27.0" layoutY="50.0" text="Label" textFill="WHITE" />
-                  <Label layoutX="27.0" layoutY="104.0" text="Fecha" textFill="WHITE" />
-                  <Label fx:id="labelFecha" layoutX="28.0" layoutY="129.0" text="Label" textFill="WHITE" />
-                  <Label layoutX="27.0" layoutY="188.0" text="Categoría" textFill="WHITE" />
-                  <Label fx:id="labelCategoria" layoutX="28.0" layoutY="215.0" text="Label" textFill="WHITE" />
-                  <Label layoutX="590.0" layoutY="7.0" text="Información de la inscripción" textFill="WHITE">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="590.0" layoutY="104.0" text="Plazas disponibles:" textFill="WHITE" />
-                  <Label layoutX="590.0" layoutY="59.0" text="Precio de la inscripción:" textFill="WHITE" />
-                  <Label layoutX="590.0" layoutY="146.0" text="Estado:" textFill="WHITE" />
-                  <Button layoutX="590.0" layoutY="182.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="463.0" text="Inscribirse" />
-                  <Label layoutX="166.0" layoutY="104.0" text="Distancia" textFill="WHITE" />
-                  <Label layoutX="166.0" layoutY="188.0" text="Tiempo máximo" textFill="WHITE" />
-                  <Label fx:id="labelTiempoMaximo" layoutX="166.0" layoutY="215.0" text="Label" textFill="WHITE" />
-                  <Label fx:id="labelDistancia" layoutX="166.0" layoutY="129.0" text="Label" textFill="WHITE" />
-                  <Label fx:id="labelPrecioInscripcion" layoutX="984.0" layoutY="59.0" text="Label" textFill="WHITE" />
-                  <Label fx:id="labelPlazasDisponibles" layoutX="984.0" layoutY="104.0" text="Label" textFill="WHITE" />
-                  <Label fx:id="labelEstado" layoutX="984.0" layoutY="146.0" text="Label" textFill="WHITE" />
-                  <Label layoutX="366.0" layoutY="104.0" text="Ubicación" textFill="WHITE">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="labelUbicacion" layoutX="366.0" layoutY="146.0" text="Label" textFill="WHITE" />
-               </children></Pane>
-         </children>
-      </VBox>
-   </center>
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <Pane prefHeight="255.0" prefWidth="1180.0">
+                    <children>
+                        <ImageView fx:id="imgView" fitHeight="221.0" fitWidth="1181.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="labelNombreCarrera" layoutX="14.0" layoutY="197.0" text="Label" textFill="WHITE" />
+                    </children>
+                </Pane>
+                <Pane prefHeight="283.0" prefWidth="1180.0">
+                    <children>
+                        <Label layoutY="7.0" text="Detalles de la carrera" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="labelDescripcion" layoutX="27.0" layoutY="50.0" text="Label" textFill="WHITE" />
+                        <Label layoutX="27.0" layoutY="104.0" text="Fecha" textFill="WHITE" />
+                        <Label fx:id="labelFecha" layoutX="28.0" layoutY="129.0" text="Label" textFill="WHITE" />
+                        <Label layoutX="27.0" layoutY="188.0" text="Categoría" textFill="WHITE" />
+                        <Label fx:id="labelCategoria" layoutX="28.0" layoutY="215.0" text="Label" textFill="WHITE" />
+                        <Label layoutX="590.0" layoutY="7.0" text="Información de la inscripción" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="590.0" layoutY="104.0" text="Plazas disponibles:" textFill="WHITE" />
+                        <Label layoutX="590.0" layoutY="59.0" text="Precio de la inscripción:" textFill="WHITE" />
+                        <Label layoutX="590.0" layoutY="146.0" text="Estado:" textFill="WHITE" />
+                        <Button layoutX="590.0" layoutY="182.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="463.0" text="Inscribirse" />
+                        <Label layoutX="166.0" layoutY="104.0" text="Distancia" textFill="WHITE" />
+                        <Label layoutX="166.0" layoutY="188.0" text="Tiempo máximo" textFill="WHITE" />
+                        <Label fx:id="labelTiempoMaximo" layoutX="166.0" layoutY="215.0" text="Label" textFill="WHITE" />
+                        <Label fx:id="labelDistancia" layoutX="166.0" layoutY="129.0" text="Label" textFill="WHITE" />
+                        <Label fx:id="labelPrecioInscripcion" layoutX="984.0" layoutY="59.0" text="Label" textFill="WHITE" />
+                        <Label fx:id="labelPlazasDisponibles" layoutX="984.0" layoutY="104.0" text="Label" textFill="WHITE" />
+                        <Label fx:id="labelEstado" layoutX="984.0" layoutY="146.0" text="Label" textFill="WHITE" />
+                        <Label layoutX="366.0" layoutY="104.0" text="Ubicación" textFill="WHITE">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="labelUbicacion" layoutX="366.0" layoutY="146.0" text="Label" textFill="WHITE" />
+                    </children></Pane>
+            </children>
+        </VBox>
+    </center>
 </BorderPane>
