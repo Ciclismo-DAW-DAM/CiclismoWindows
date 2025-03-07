@@ -31,11 +31,10 @@ application {
 
 javafx {
   version = '21'
-  modules = ['javafx.controls', 'javafx.graphics','javafx.fxml','javafx.web']
+  modules = ['javafx.controls', 'javafx.graphics', 'javafx.fxml', 'javafx.web']
 }
 
 dependencies {
-
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
   implementation 'com.squareup.retrofit2:retrofit:2.11.0'
@@ -47,29 +46,31 @@ dependencies {
 }
 
 test {
-useJUnitPlatform()}
+  useJUnitPlatform()
+}
 
-/*
-jlink {
-  imageZip = project.file("${buildDir}/distributions/app-${javafx.platform.classifier}.zip")
-  options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
-  launcher {
-    name = 'app'
+// Configuración para generar el JAR con el MANIFEST.MF correcto
+jar {
+  manifest {
+    attributes(
+            'Main-Class': 'clases.ciclismowindows.HelloApplication'
+    )
   }
+  from {
+    configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+  }
+  duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
-jlinkZip {
-  group = 'distribution'
-}
-*/
 sourceSets {
   main {
     resources {
       srcDirs = ["src/main/resources", "src/main/java"]
-      includes = ["**/*.fxml","**/*.properties","**/*.jasper","**/*.png","**/*.html","**/*.jrxml","**/*.jpg"]
+      includes = ["**/*.fxml", "**/*.properties", "**/*.jasper", "**/*.png", "**/*.html", "**/*.jrxml", "**/*.jpg"]
     }
   }
 }
+
 run {
   jvmArgs = [
           '--module-path', classpath.asPath,
