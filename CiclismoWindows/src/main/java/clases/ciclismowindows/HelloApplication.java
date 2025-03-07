@@ -17,6 +17,7 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(root, 1300, 780);
         primaryStage.setTitle("Ciclismo");
         primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 
