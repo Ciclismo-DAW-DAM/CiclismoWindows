@@ -1,5 +1,6 @@
 package controladores;
 
+import Conexion.Carrera;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -15,7 +16,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 
 import javafx.stage.Stage;
-import modelos.Carrera;
 
 import java.io.IOException;
 
@@ -100,15 +100,15 @@ public class homeController {
 
         carreras.add(
                 new Carrera(
-                        "Granada, Gran ciudad",
-                        "https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/andalucia/alhambra-granada-20044065-istock.jpg_1014274486.jpg",
+                        1,
+                        "Granada",
                         "Carrera benefica",
                         "Carrera de granada"
                 ));
         carreras.add(
                 new Carrera(
-                        "Huelva, Ciudad",
-                        "https://losdosviajeros.com/img/sevilla/plaza-espana-noche.jpg",
+                        2,
+                        "Granada",
                         "Carrera de cancer",
                         "Carrera de Sevilla"
                 )
@@ -116,45 +116,8 @@ public class homeController {
 
         carreras.add(
                 new Carrera(
-                        "Cadíz, Ciudad",
-                        "https://losdosviajeros.com/img/sevilla/plaza-espana-noche.jpg",
-                        "Carrera de cancer",
-                        "Carrera de Sevilla"
-                )
-        );
-
-        carreras.add(
-
-                new Carrera(
-                        "Jaen, Ciudad",
-                        "https://losdosviajeros.com/img/sevilla/plaza-espana-noche.jpg",
-                        "Carrera de cancer",
-                        "Carrera de Sevilla"
-                )
-        );
-
-        carreras.add(
-                new Carrera(
-                        "Sevilla, Ciudad",
-                        "https://losdosviajeros.com/img/sevilla/plaza-espana-noche.jpg",
-                        "Carrera de cancer",
-                        "Carrera de Sevilla"
-                )
-        );
-
-        carreras.add(
-                new Carrera(
-                        "Sevilla, Ciudad",
-                        "https://losdosviajeros.com/img/sevilla/plaza-espana-noche.jpg",
-                        "Carrera de cancer",
-                        "Carrera de Sevilla"
-                )
-        );
-
-        carreras.add(
-                new Carrera(
-                        "Sevilla, Ciudad",
-                        "https://losdosviajeros.com/img/sevilla/plaza-espana-noche.jpg",
+                        3,
+                        "Granada",
                         "Carrera de cancer",
                         "Carrera de Sevilla"
                 )
@@ -163,8 +126,8 @@ public class homeController {
         carreras.add(
 
                 new Carrera(
-                        "Sevilla, Ciudad",
-                        "https://losdosviajeros.com/img/sevilla/plaza-espana-noche.jpg",
+                        4,
+                        "Granada",
                         "Carrera de cancer",
                         "Carrera de Sevilla"
                 )
@@ -172,8 +135,8 @@ public class homeController {
 
         carreras.add(
                 new Carrera(
-                        "Sevilla, Ciudad",
-                        "https://losdosviajeros.com/img/sevilla/plaza-espana-noche.jpg",
+                        5,
+                        "Granada",
                         "Carrera de cancer",
                         "Carrera de Sevilla"
                 )
@@ -181,8 +144,8 @@ public class homeController {
 
         carreras.add(
                 new Carrera(
-                        "Sevilla, Ciudad",
-                        "https://losdosviajeros.com/img/sevilla/plaza-espana-noche.jpg",
+                        6,
+                        "Granada",
                         "Carrera de cancer",
                         "Carrera de Sevilla"
                 )
@@ -190,17 +153,8 @@ public class homeController {
 
         carreras.add(
                 new Carrera(
-                        "Sevilla, Ciudad",
-                        "https://losdosviajeros.com/img/sevilla/plaza-espana-noche.jpg",
-                        "Carrera de cancer",
-                        "Carrera de Sevilla"
-                )
-        );
-
-        carreras.add(
-                new Carrera(
-                        "Sevilla, Ciudad",
-                        "https://losdosviajeros.com/img/sevilla/plaza-espana-noche.jpg",
+                        7,
+                        "Granada",
                         "Carrera de cancer",
                         "Carrera de Sevilla"
                 )
@@ -209,8 +163,8 @@ public class homeController {
         carreras.add(
 
                 new Carrera(
-                        "Sevilla, Ciudad",
-                        "https://losdosviajeros.com/img/sevilla/plaza-espana-noche.jpg",
+                        8,
+                        "Granada",
                         "Carrera de cancer",
                         "Carrera de Sevilla"
                 )
@@ -218,8 +172,8 @@ public class homeController {
 
         carreras.add(
                 new Carrera(
-                        "Sevilla, Ciudad",
-                        "https://losdosviajeros.com/img/sevilla/plaza-espana-noche.jpg",
+                        9,
+                        "Granada",
                         "Carrera de cancer",
                         "Carrera de Sevilla"
                 )
@@ -227,8 +181,8 @@ public class homeController {
 
         carreras.add(
                 new Carrera(
-                        "Sevilla, Ciudad",
-                        "https://losdosviajeros.com/img/sevilla/plaza-espana-noche.jpg",
+                        10,
+                        "Granada",
                         "Carrera de cancer",
                         "Carrera de Sevilla"
                 )
@@ -236,8 +190,8 @@ public class homeController {
 
         carreras.add(
                 new Carrera(
-                        "Sevilla, Ciudad",
-                        "https://losdosviajeros.com/img/sevilla/plaza-espana-noche.jpg",
+                        11,
+                        "Granada",
                         "Carrera de cancer",
                         "Carrera de Sevilla"
                 )
@@ -245,8 +199,8 @@ public class homeController {
 
         carreras.add(
                 new Carrera(
-                        "Sevilla, Ciudad",
-                        "https://losdosviajeros.com/img/sevilla/plaza-espana-noche.jpg",
+                        12,
+                        "Granada",
                         "Carrera de cancer",
                         "Carrera de Sevilla"
                 )
@@ -255,8 +209,8 @@ public class homeController {
         carreras.add(
 
                 new Carrera(
-                        "Sevilla, Ciudad",
-                        "https://losdosviajeros.com/img/sevilla/plaza-espana-noche.jpg",
+                        13,
+                        "Granada",
                         "Carrera de cancer",
                         "Carrera de Sevilla"
                 )
@@ -264,8 +218,54 @@ public class homeController {
 
         carreras.add(
                 new Carrera(
-                        "Sevilla, Ciudad",
-                        "https://losdosviajeros.com/img/sevilla/plaza-espana-noche.jpg",
+                        14,
+                        "Granada",
+                        "Carrera de cancer",
+                        "Carrera de Sevilla"
+                )
+        );
+
+        carreras.add(
+                new Carrera(
+                        15,
+                        "Granada",
+                        "Carrera de cancer",
+                        "Carrera de Sevilla"
+                )
+        );
+
+        carreras.add(
+                new Carrera(
+                        16,
+                        "Granada",
+                        "Carrera de cancer",
+                        "Carrera de Sevilla"
+                )
+        );
+
+        carreras.add(
+                new Carrera(
+                        17,
+                        "Granada",
+                        "Carrera de cancer",
+                        "Carrera de Sevilla"
+                )
+        );
+
+        carreras.add(
+
+                new Carrera(
+                        18,
+                        "Granada",
+                        "Carrera de cancer",
+                        "Carrera de Sevilla"
+                )
+        );
+
+        carreras.add(
+                new Carrera(
+                        19,
+                        "Granada",
                         "Carrera de cancer",
                         "Carrera de Sevilla"
                 )
@@ -306,7 +306,7 @@ public class homeController {
                 }
 
                 for (Carrera c : carreras){
-                    if ((c.getNombre().toLowerCase().contains(newValue.toLowerCase())) || (c.getDireccion().toLowerCase().contains(newValue.toLowerCase()))){
+                    if ((c.getNombre().toLowerCase().contains(newValue.toLowerCase())) || (c.getUbicacion().toLowerCase().contains(newValue.toLowerCase()))){
                         carreraFiltradas.add(c);
                     }
                 }
@@ -404,7 +404,7 @@ public class homeController {
 
         for (Carrera c : list){
             resultados.add(c.getNombre());
-            resultados.add(c.getDireccion());
+            resultados.add(c.getUbicacion());
         }
 
 
