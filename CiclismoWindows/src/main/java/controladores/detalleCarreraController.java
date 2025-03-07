@@ -68,6 +68,7 @@ public class detalleCarreraController {
         imgView.setSmooth(true);
         imgView.setCache(true);
 
+        //labelNombreCarrera.
         labelPerfil.setOnMouseClicked(event -> {
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/clases/vistas/perfil.fxml"));
