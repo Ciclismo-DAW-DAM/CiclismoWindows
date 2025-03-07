@@ -1,6 +1,6 @@
 package Conexion;
 
-import clases.ciclismowindows.Carrera;
+import modelos.Carrera;
 import retrofit2.http.GET;
 import retrofit2.Call;
 

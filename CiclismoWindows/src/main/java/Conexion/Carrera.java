@@ -1,4 +1,4 @@
-package clases.ciclismowindows;
+package Conexion;
 
 import com.google.gson.annotations.SerializedName;
 

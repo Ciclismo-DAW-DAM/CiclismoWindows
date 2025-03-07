@@ -2,7 +2,7 @@ package Conexion;
 
 import java.util.List;
 
-import clases.ciclismowindows.Carrera;
+import modelos.Carrera;
 import com.google.gson.annotations.SerializedName;
 
 public class apiResponse {
