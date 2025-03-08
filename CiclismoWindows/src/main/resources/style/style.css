@@ -1,0 +1,23 @@
+.blue{
+    -fx-background-color: #001f3d;
+}
+
+.green{
+    -fx-background-color:  #00ffaa;
+}
+
+.borderColor{
+    -fx-border-color: #FFFFFF;
+}
+
+.white{
+    -fx-background-color:  #f3f3f3;
+}
+
+.textFill{
+  -fx-text-fill: #00ffaa;
+}
+
+.borderColorGreen{
+    -fx-border-color:#00ffaa;
+}

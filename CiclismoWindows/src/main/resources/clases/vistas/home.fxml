@@ -13,11 +13,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #001f3d;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.homeController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="blue" stylesheets="@../../style/style.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.homeController">
    <top>
-      <Pane prefHeight="72.0" prefWidth="1280.0" style="-fx-background-color: #00ffaa;" BorderPane.alignment="CENTER">
+      <Pane prefHeight="72.0" prefWidth="1280.0" styleClass="green" BorderPane.alignment="CENTER">
          <children>
-            <Pane layoutX="222.0" layoutY="11.0" prefHeight="50.0" prefWidth="5.0" style="-fx-background-color: #001f3d; -fx-background-radius: 15;" />
+            <Pane layoutX="222.0" layoutY="11.0" prefHeight="50.0" prefWidth="5.0" style="-fx-background-radius: 15;" styleClass="blue" />
             <Label layoutX="77.0" layoutY="11.0" onMouseClicked="#onInicio" text="Ciclismo" textFill="#001f3d">
                <font>
                   <Font name="Open Sans Regular" size="35.0" />
@@ -63,19 +63,19 @@
       <Pane prefHeight="608.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
    </left>
    <bottom>
-      <Pane prefHeight="50.0" prefWidth="1280.0" style="-fx-background-color: #00ffaa;" BorderPane.alignment="CENTER" />
+      <Pane prefHeight="50.0" prefWidth="1280.0" styleClass="green" BorderPane.alignment="CENTER" />
    </bottom>
    <right>
       <Pane prefHeight="560.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
    </right>
    <center>
-      <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #001f3d;" BorderPane.alignment="CENTER">
+      <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="blue" BorderPane.alignment="CENTER">
          <children>
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #001f3d;">
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blue">
                <children>
                   <ScrollPane fx:id="P_scroll" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="14.0" prefHeight="597.6" prefWidth="1179.2" style="-fx-border-color: transparent; -fx-background-color: #001f3d;" vbarPolicy="AS_NEEDED">
                      <content>
-                        <Pane fx:id="PanelPrueba" prefHeight="424.0" prefWidth="1174.0" style="-fx-background-color: #001f3d;" />
+                        <Pane fx:id="PanelPrueba" prefHeight="424.0" prefWidth="1174.0" styleClass="blue" />
                      </content>
                   </ScrollPane>
                   <ListView fx:id="vl_respuestas" layoutX="455.0" prefHeight="258.0" prefWidth="507.0" visible="false" />

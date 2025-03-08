@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #001f3d;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.detalleCarreraController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="blue" stylesheets="@../../style/style.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.detalleCarreraController">
     <top>
-        <Pane prefHeight="72.0" prefWidth="1280.0" style="-fx-background-color: #00ffaa;" BorderPane.alignment="CENTER">
+        <Pane prefHeight="72.0" prefWidth="1280.0" styleClass="green" BorderPane.alignment="CENTER">
             <children>
-                <Pane layoutX="222.0" layoutY="11.0" prefHeight="50.0" prefWidth="5.0" style="-fx-background-color: #001f3d; -fx-background-radius: 15;" />
+                <Pane layoutX="222.0" layoutY="11.0" prefHeight="50.0" prefWidth="5.0" style="-fx-background-radius: 15;" styleClass="blue" />
                 <Label fx:id="labelCiclismo" layoutX="77.0" layoutY="11.0" text="Ciclismo" textFill="#001f3d">
                     <font>
                         <Font name="Open Sans Regular" size="35.0" />
@@ -50,7 +50,7 @@
         <Pane prefHeight="608.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
     </left>
     <bottom>
-        <Pane prefHeight="50.0" prefWidth="1280.0" style="-fx-background-color: #00ffaa;" BorderPane.alignment="CENTER" />
+        <Pane prefHeight="50.0" prefWidth="1280.0" styleClass="green" BorderPane.alignment="CENTER" />
     </bottom>
     <right>
         <Pane prefHeight="560.0" prefWidth="50.0" BorderPane.alignment="CENTER" />

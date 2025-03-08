@@ -7,7 +7,7 @@ plugins {
 }
 
 group 'Clases'
-version 'CiclismoWindows'
+version '1.0-SNAPSHOT'
 
 repositories {
   mavenCentral()
