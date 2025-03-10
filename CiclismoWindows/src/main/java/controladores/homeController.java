@@ -11,10 +11,8 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
-
 import javafx.scene.layout.Pane;
-import javafx.stage.Stage;
-
+import modelos.Carrera;
 import java.io.IOException;
 
 import java.util.ArrayList;

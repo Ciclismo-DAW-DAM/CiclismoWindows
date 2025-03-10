@@ -109,6 +109,11 @@ public class perfilController {
         confirmarBoton.setCursor(javafx.scene.Cursor.HAND);
         actualizarDatos.setCursor(javafx.scene.Cursor.HAND);
         cerrarSesion.setCursor(javafx.scene.Cursor.HAND);
+        aplicarEfectoHover(homePerfil);
+    }
+    private void aplicarEfectoHover(Button button) {
+        button.setOnMouseEntered(e -> button.setStyle("-fx-background-color: #00cc88;")); // Más oscuro
+        button.setOnMouseExited(e -> button.setStyle("-fx-background-color: #00ffaa;")); // Color original
     }
 
     private void actualizarImagen() {
