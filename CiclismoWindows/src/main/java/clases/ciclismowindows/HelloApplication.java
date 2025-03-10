@@ -12,7 +12,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         Stage stage = primaryStage;
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/clases/vistas/home.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/clases/vistas/login.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root, 1280, 720);
         stage.setTitle("Ciclismo");

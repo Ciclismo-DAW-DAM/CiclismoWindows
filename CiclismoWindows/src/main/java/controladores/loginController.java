@@ -36,7 +36,7 @@ public class loginController {
             mostrarAlerta("Ciclismo", "Debe llenar todos los campos", Alert.AlertType.ERROR);
             return;
         }
-        if(correo.equals("Antonio") && contrasena.equals("Quiros")){
+        if(correo.equals("admin") && contrasena.equals("admin")){
             mostrarAlerta("Ciclismo","Has iniciado sesion correctamente", Alert.AlertType.INFORMATION);
             try {
                 // Cargar el archivo FXML
